@@ -54,7 +54,7 @@ console.log(`Ethiopia's peoplation in percent is ${EthiopiaPeoplationInPercent3}
 const TigrayPeoplationInPercent3 = percentageOfWorld3(120);
 console.log(`Tigray's peoplation in percent is ${TigrayPeoplationInPercent3} %`);
 
-//Functions Calling Other Functions 
+//Functions Calling Other Functions
 
 function percentageOfWorld1(population) {
     const peoplationPercentage = (population / 7900) * 100;
@@ -140,4 +140,29 @@ myCountry.population = myCountry.population - 2;
 console.log(myCountry.population);
 myCountry['population'] = myCountry['population'] + 2
 console.log(myCountry['population']);
+
+// Object Methods
+const myCountry = {
+
+    country: "Ethiopia",
+    population: 120,
+    capital: "Adiss Ababa",
+    language: "Amharic",
+    nighbours: ['Eritrea', 'Sudan', 'Kenya'],
+    describe: function () {
+
+        this.eth = `${this.country} has ${this.population} million ${this.language}-speaking people,
+${this.nighbours.length} neighbouring countries and a capital called ${this.capital}`;
+        return this.eth;
+    },
+    checkIsland: function () {
+        this.isIsland = (this.nighbours.length === 0) ? true : false;
+        return this.isIsland;
+    }
+}
+console.log(myCountry.describe());
+console.log(myCountry.checkIsland());
+
 */
+
+//codding challenge 3
