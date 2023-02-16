@@ -124,3 +124,19 @@ console.log(tips);
 const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(total);
 */
+//Introduction to Objects
+let myCountry = {
+
+    country: "Ethiopia",
+    population: 120,
+    capital: "Adiss Ababa",
+    language: "Amharic",
+    nighbours: ['Eritrea', 'Sudan', 'Kenya']
+}
+const Eth = `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.nighbours.length} countries and a capital called ${myCountry.capital}`
+console.log(Eth);
+
+myCountry.population = myCountry.population - 2;
+console.log(myCountry.population);
+myCountry['population'] = myCountry['population'] + 2
+console.log(myCountry['population']);
