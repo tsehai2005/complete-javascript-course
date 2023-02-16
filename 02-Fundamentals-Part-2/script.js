@@ -192,4 +192,87 @@ if (mark.calcBMI() > jhon.calcBMI()) {
 else {
     console.log(`${jhon.fullName}'s BMI(${jhon.calcBMI()}) is higher than ${mark.fullName}'s BMI(${mark.calcBMI()})!`)
 }
+
+// for loop
+for (let voter = 1; voter <= 50; voter++) {
+
+    console.log(`Voter number ${voter} is currently voting`);
+
+}
+//Loopi ng arrays and , braek and continuing
+
+const population = [120, 1441, 12, 37];
+const percentages2 = [];
+function percentageOfWorld1(population) {
+    const peoplationPercentage = (population / 7900) * 100;
+    return peoplationPercentage;
+}
+for (i = 0; i < population.length; i++) {
+    percentages2.push(percentageOfWorld1(population[i]));
+}
+console.log(percentages2);
+
+//Loops in loop
+const listOfNeighbours =
+    [
+        ['Canada', 'Mexico'],
+        ['Spain'],
+        ['Norway', 'Sweden', 'Russia']
+    ];
+for (let i = 0; i < listOfNeighbours.length; i++) {
+    let listOfNeighbourInner = listOfNeighbours[i];
+    for (let j = 0; j < listOfNeighbourInner.length; j++) {
+        console.log(` Nighbour: ${listOfNeighbourInner[j]}`);
+    }
+}
+
+const population = [120, 1441, 12, 37];
+const percentages2 = [];
+function percentageOfWorld1(population) {
+    const peoplationPercentage = (population / 7900) * 100;
+    return peoplationPercentage;
+}
+
+let i = 0;
+while (i < population.length) {
+    percentages2.push(percentageOfWorld1(population[i]));
+    i++;
+}
+console.log(percentages2);
+
+// codding challenge 4
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+const calcTip = function (bill) {
+    if (bill >= 50 && bill <= 300) {
+        return bill * 0.15;
+    }
+    else {
+        return bill * 0.2;
+    }
+}
+for (let i = 0; i < bills.length; i++) {
+    tips.push(calcTip(bills[i]));
+    totals.push(tips[i] + bills[i]);
+}
+console.log(bills, tips, totals);
+
+
+const calcAverage = function (arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum = sum + arr[i];
+    }
+    const average = sum / arr.length;
+    return average;
+}
+console.log(calcAverage([10, 2, 3, 20]));
+console.log(calcAverage(totals));
+console.log(calcAverage(tips));
+console.log(calcAverage(bills));
+
 */
+
+
+
