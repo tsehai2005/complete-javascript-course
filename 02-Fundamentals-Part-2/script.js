@@ -163,6 +163,33 @@ ${this.nighbours.length} neighbouring countries and a capital called ${this.capi
 console.log(myCountry.describe());
 console.log(myCountry.checkIsland());
 
-*/
-
 //codding challenge 3
+
+const mark = {
+    fullName: "Mark Miller",
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.markBMI = this.mass / (this.height ** 2);
+        return this.markBMI;
+    }
+}
+const jhon = {
+
+    fullName: "John Smith",
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.jhonBMI = this.mass / (this.height ** 2);
+        return this.jhonBMI;
+    }
+
+}
+if (mark.calcBMI() > jhon.calcBMI()) {
+
+    console.log(`${mark.fullName}'s BMI(${mark.calcBMI()}) is higher than ${jhon.fullName}(${jhon.calcBMI()})!`)
+}
+else {
+    console.log(`${jhon.fullName}'s BMI(${jhon.calcBMI()}) is higher than ${mark.fullName}'s BMI(${mark.calcBMI()})!`)
+}
+*/
