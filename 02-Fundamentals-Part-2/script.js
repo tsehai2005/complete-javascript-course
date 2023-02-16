@@ -199,7 +199,7 @@ for (let voter = 1; voter <= 50; voter++) {
     console.log(`Voter number ${voter} is currently voting`);
 
 }
-//Loopi ng arrays and , braek and continuing
+//Looping arrays and , braek and continuing
 
 const population = [120, 1441, 12, 37];
 const percentages2 = [];
